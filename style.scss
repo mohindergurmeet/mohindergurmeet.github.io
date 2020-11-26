@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grad1 {
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.grad1-opp {
+    background: linear-gradient(to right, #eedd44, #cf23cf, #ff6b08, #f32170);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.purple {
+    color: rgb(243, 154, 255);
+}
+
+.pink {
+    color: pink;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+main {
+    // background: url("./cover.jpg") no-repeat center;
+    // background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Sansita Swashed", cursive;
+
+    .wish {
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    h1 + h1 {
+        font-size: 1.7em;
+    }
+
+    #cover-mobile {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+
+        img {
+            width: 75vw;
+            border-radius: 20px;
+        }
+    }
+}
+
+.best {
+    color: #e9ff99;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5em;
+    transition: 0.25s;
+
+    span {
+        font-size: 1.15em;
+    }
+}
+
+#static-text {
+    display: block;
+}
+
+#dynamic-text {
+    color: #9affdb;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: white;
+    width: 2px;
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    49.9% {
+        background-color: white;
+    }
+    50% {
+        background-color: transparent;
+    }
+
+    99.9% {
+        background-color: transparent;
+    }
+}
