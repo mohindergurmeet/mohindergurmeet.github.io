@@ -28,14 +28,16 @@
 
 body {
     background-color: rgb(22, 22, 22);
+    color: white;
 }
 
 main {
     // background: url("./cover.jpg") no-repeat center;
     // background-size: cover;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     font-family: "Sansita Swashed", cursive;
+    margin-bottom: 1em;
 
     .wish {
         color: white;
@@ -103,5 +105,62 @@ main {
 
     99.9% {
         background-color: transparent;
+    }
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 75vw;
+        border-radius: 20px;
+    }
+}
+
+section.quote-sec {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: #d4d4d4;
+    margin-top: 50px;
+    padding: 70px 0;
+
+    .quote {
+        font-family: "Sansita Swashed", cursive;
+        margin: 0 30px;
+        margin-top: 32px;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        letter-spacing: 0.15em;
+    }
+}
+
+section#quote-sec-1 {
+    background: linear-gradient(rgb(22, 22, 22), #7b25c2, rgb(22, 22, 22));
+}
+
+section#quote-sec-2 {
+    background: linear-gradient(rgb(22, 22, 22), #c225c2, rgb(22, 22, 22));
+}
+
+section#thank-sec {
+    background: linear-gradient(rgb(22, 22, 22), #1e648d);
+    margin-top: 50px;
+    padding: 30px;
+    font-family: "Sansita Swashed", cursive;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: 0.15em;
+}
+
+.love-text {
+    span {
+        color: #ff6b08;
+    }
+}
+
+.by-text {
+    span {
+        color: #eedd44;
     }
 }

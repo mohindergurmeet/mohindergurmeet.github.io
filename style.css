@@ -31,12 +31,16 @@
 
 body {
   background-color: #161616;
+  color: white;
 }
 
 main {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100vw;
   font-family: "Sansita Swashed", cursive;
+  margin-bottom: 1em;
 }
 
 main .wish {
@@ -122,5 +126,73 @@ main #cover-mobile img {
   99.9% {
     background-color: transparent;
   }
+}
+
+.pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pic img {
+  width: 75vw;
+  border-radius: 20px;
+}
+
+section.quote-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #d4d4d4;
+  margin-top: 50px;
+  padding: 70px 0;
+}
+
+section.quote-sec .quote {
+  font-family: "Sansita Swashed", cursive;
+  margin: 0 30px;
+  margin-top: 32px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  letter-spacing: 0.15em;
+}
+
+section#quote-sec-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(#7b25c2), to(#161616));
+  background: linear-gradient(#161616, #7b25c2, #161616);
+}
+
+section#quote-sec-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(#c225c2), to(#161616));
+  background: linear-gradient(#161616, #c225c2, #161616);
+}
+
+section#thank-sec {
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), to(#1e648d));
+  background: linear-gradient(#161616, #1e648d);
+  margin-top: 50px;
+  padding: 30px;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  letter-spacing: 0.15em;
+}
+
+.love-text span {
+  color: #ff6b08;
+}
+
+.by-text span {
+  color: #eedd44;
 }
 /*# sourceMappingURL=style.css.map */
