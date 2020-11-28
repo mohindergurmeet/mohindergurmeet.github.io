@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+$tablet: 760px;
+$desktop: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
 .grad1 {
     background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
     background-clip: text;
@@ -29,6 +44,10 @@
 body {
     background-color: rgb(22, 22, 22);
     color: white;
+
+    @include tablet {
+        font-size: 1.5em;
+    }
 }
 
 main {
@@ -39,10 +58,22 @@ main {
     font-family: "Sansita Swashed", cursive;
     margin-bottom: 1em;
 
+    @include desktop {
+        height: 100vh;
+        width: 100%;
+        background: url("./cover.jpg") no-repeat center -100px;
+        background-size: cover;
+        position: relative;
+    }
+
     .wish {
         color: white;
         text-align: center;
         padding: 1em;
+
+        @include desktop {
+            text-align: unset;
+        }
     }
 
     h1 {
@@ -57,6 +88,10 @@ main {
         display: flex;
         justify-content: center;
         margin: 1em 0;
+
+        @include desktop {
+            display: none;
+        }
 
         img {
             width: 75vw;
@@ -74,6 +109,24 @@ main {
 
     span {
         font-size: 1.15em;
+    }
+}
+
+#text {
+    @include desktop {
+        background: linear-gradient(
+            rgba(22, 22, 22, 0),
+            rgba(22, 22, 22, 0.644),
+            rgb(22, 22, 22)
+        );
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 3em;
+        padding-bottom: 6em;
     }
 }
 
@@ -114,6 +167,11 @@ main {
     img {
         width: 75vw;
         border-radius: 20px;
+
+        @include desktop {
+            width: 23em;
+            margin-right: 3em;
+        }
     }
 }
 
@@ -124,6 +182,12 @@ section.quote-sec {
     color: #d4d4d4;
     margin-top: 50px;
     padding: 70px 0;
+
+    @include desktop {
+        flex-flow: row;
+        align-items: center;
+        padding: 70px 3em;
+    }
 
     .quote {
         font-family: "Sansita Swashed", cursive;
@@ -159,6 +223,10 @@ section#video-sec {
 
     video {
         width: 90vw;
+
+        @include desktop {
+            width: 1000px;
+        }
     }
 }
 
@@ -169,15 +237,28 @@ section#poster-sec {
     align-items: center;
     padding: 20px 0;
 
+    @include desktop {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
     span {
         font-family: "Sansita Swashed", cursive;
         margin-bottom: 20px;
         font-size: 1.2em;
         letter-spacing: 0.1em;
+
+        @include desktop {
+            margin-left: 3em;
+        }
     }
 
     img {
         width: 80vw;
+
+        @include desktop {
+            width: 500px;
+        }
     }
 }
 
@@ -189,6 +270,7 @@ section#thank-sec {
     font-size: 1.2em;
     line-height: 1.5em;
     letter-spacing: 0.15em;
+    text-align: center;
 }
 
 .love-text {

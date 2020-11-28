@@ -34,6 +34,12 @@ body {
   color: white;
 }
 
+@media (min-width: 760px) {
+  body {
+    font-size: 1.5em;
+  }
+}
+
 main {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -43,10 +49,26 @@ main {
   margin-bottom: 1em;
 }
 
+@media (min-width: 1024px) {
+  main {
+    height: 100vh;
+    width: 100%;
+    background: url("./cover.jpg") no-repeat center -100px;
+    background-size: cover;
+    position: relative;
+  }
+}
+
 main .wish {
   color: white;
   text-align: center;
   padding: 1em;
+}
+
+@media (min-width: 1024px) {
+  main .wish {
+    text-align: unset;
+  }
 }
 
 main h1 {
@@ -67,6 +89,12 @@ main #cover-mobile {
   margin: 1em 0;
 }
 
+@media (min-width: 1024px) {
+  main #cover-mobile {
+    display: none;
+  }
+}
+
 main #cover-mobile img {
   width: 75vw;
   border-radius: 20px;
@@ -83,6 +111,25 @@ main #cover-mobile img {
 
 .best span {
   font-size: 1.15em;
+}
+
+@media (min-width: 1024px) {
+  #text {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0)), color-stop(rgba(22, 22, 22, 0.644)), to(#161616));
+    background: linear-gradient(rgba(22, 22, 22, 0), rgba(22, 22, 22, 0.644), #161616);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 3em;
+    padding-bottom: 6em;
+  }
 }
 
 #static-text {
@@ -142,6 +189,13 @@ main #cover-mobile img {
   border-radius: 20px;
 }
 
+@media (min-width: 1024px) {
+  .pic img {
+    width: 23em;
+    margin-right: 3em;
+  }
+}
+
 section.quote-sec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,6 +210,19 @@ section.quote-sec {
   color: #d4d4d4;
   margin-top: 50px;
   padding: 70px 0;
+}
+
+@media (min-width: 1024px) {
+  section.quote-sec {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 70px 3em;
+  }
 }
 
 section.quote-sec .quote {
@@ -205,6 +272,12 @@ section#video-sec video {
   width: 90vw;
 }
 
+@media (min-width: 1024px) {
+  section#video-sec video {
+    width: 1000px;
+  }
+}
+
 section#poster-sec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,6 +295,18 @@ section#poster-sec {
   padding: 20px 0;
 }
 
+@media (min-width: 1024px) {
+  section#poster-sec {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 section#poster-sec span {
   font-family: "Sansita Swashed", cursive;
   margin-bottom: 20px;
@@ -229,8 +314,20 @@ section#poster-sec span {
   letter-spacing: 0.1em;
 }
 
+@media (min-width: 1024px) {
+  section#poster-sec span {
+    margin-left: 3em;
+  }
+}
+
 section#poster-sec img {
   width: 80vw;
+}
+
+@media (min-width: 1024px) {
+  section#poster-sec img {
+    width: 500px;
+  }
 }
 
 section#thank-sec {
@@ -242,6 +339,7 @@ section#thank-sec {
   font-size: 1.2em;
   line-height: 1.5em;
   letter-spacing: 0.15em;
+  text-align: center;
 }
 
 .love-text span {
