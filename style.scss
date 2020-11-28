@@ -240,6 +240,8 @@ section#poster-sec {
     @include desktop {
         flex-direction: row-reverse;
         align-items: center;
+        justify-content: space-evenly;
+        padding: 30px;
     }
 
     span {
@@ -247,18 +249,44 @@ section#poster-sec {
         margin-bottom: 20px;
         font-size: 1.2em;
         letter-spacing: 0.1em;
-
-        @include desktop {
-            margin-left: 3em;
-        }
     }
 
     img {
         width: 80vw;
+        margin: 20px 0;
 
         @include desktop {
             width: 500px;
+            margin: 0;
+            margin-right: 20px;
         }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        background-color: #7b25c2;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+}
+
+#poster-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#a-desktop {
+    display: none;
+    @include desktop {
+        display: initial;
+        width: fit-content;
+    }
+}
+
+#a-mobile {
+    @include desktop {
+        display: none;
     }
 }
 
