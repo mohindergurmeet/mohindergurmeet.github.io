@@ -143,6 +143,44 @@ section#quote-sec-2 {
     background: linear-gradient(rgb(22, 22, 22), #c225c2, rgb(22, 22, 22));
 }
 
+section#video-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    span {
+        font-family: "Sansita Swashed", cursive;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+    }
+
+    video {
+        width: 90vw;
+    }
+}
+
+section#poster-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    span {
+        font-family: "Sansita Swashed", cursive;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+    }
+
+    img {
+        width: 80vw;
+    }
+}
+
 section#thank-sec {
     background: linear-gradient(rgb(22, 22, 22), #1e648d);
     margin-top: 50px;
