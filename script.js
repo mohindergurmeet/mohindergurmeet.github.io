@@ -2,7 +2,7 @@ const dynamicTextSpan = document.getElementById("dynamic-text");
 const text = document.querySelector(".type");
 const cursor = document.querySelector(".cursor");
 
-const textArray = ["COUPLE", "PARENTS"];
+const textArray = ["COUPLE", "PARENTS", "DAUGHTER and SON"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 1500;
