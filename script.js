@@ -1,3 +1,4 @@
+// For typing effect
 const dynamicTextSpan = document.getElementById("dynamic-text");
 const text = document.querySelector(".type");
 const cursor = document.querySelector(".cursor");
@@ -44,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(type, newTextDelay + 250);
 });
 
+// for countdown timer
+
 var mainFunc = setInterval(function () {
     var now = new Date();
     var anivDate = new Date(now.getFullYear(), 11, 1, 0, 0, 0, 0).getTime();
@@ -65,3 +68,34 @@ var mainFunc = setInterval(function () {
             days + "d " + hours + "hrs " + minutes + "min " + seconds + "sec ";
     }
 }, 1000);
+
+// for lazy loading
+document.addEventListener("DOMContentLoaded", function () {
+    var lazyloadImages = document.querySelectorAll("img.lazy");
+    var lazyloadThrottleTimeout;
+
+    function lazyload() {
+        if (lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+        }
+
+        lazyloadThrottleTimeout = setTimeout(function () {
+            var scrollTop = window.pageYOffset;
+            lazyloadImages.forEach(function (img) {
+                if (img.offsetTop < window.innerHeight + scrollTop) {
+                    img.src = img.dataset.src;
+                    img.classList.remove("lazy");
+                }
+            });
+            if (lazyloadImages.length == 0) {
+                document.removeEventListener("scroll", lazyload);
+                window.removeEventListener("resize", lazyload);
+                window.removeEventListener("orientationChange", lazyload);
+            }
+        }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+});
