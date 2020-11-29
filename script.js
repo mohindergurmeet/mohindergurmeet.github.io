@@ -43,3 +43,25 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(type, newTextDelay + 250);
 });
+
+var mainFunc = setInterval(function () {
+    var now = new Date();
+    var anivDate = new Date(now.getFullYear(), 11, 1, 0, 0, 0, 0).getTime();
+    var nowTime = now.getTime();
+    var timeLeft = anivDate - nowTime;
+
+    var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+        (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    if (timeLeft == 0) {
+        document.getElementById("on-aniv").style.display = "unset";
+    } else {
+        document.getElementById("before-aniv").style.display = "unset";
+        document.getElementById("time-left").innerHTML =
+            days + "d " + hours + "hrs " + minutes + "min " + seconds + "sec ";
+    }
+}, 1000);

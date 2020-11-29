@@ -387,4 +387,33 @@ section#thank-sec {
 .by-text span {
   color: #eedd44;
 }
+
+#main-time-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
+}
+
+#main-time-text #time-text div {
+  display: inline;
+  font-family: "Saira Stencil One", cursive;
+  font-size: 1.3em;
+  letter-spacing: 1.5px;
+}
+
+#before-aniv {
+  display: none;
+}
+
+#on-aniv {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

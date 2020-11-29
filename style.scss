@@ -312,3 +312,28 @@ section#thank-sec {
         color: #eedd44;
     }
 }
+
+#main-time-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 95vh;
+
+    #time-text {
+        div {
+            display: inline;
+            font-family: "Saira Stencil One", cursive;
+            font-size: 1.3em;
+            letter-spacing: 1.5px;
+        }
+    }
+}
+
+#before-aniv {
+    display: none;
+}
+
+#on-aniv {
+    display: none;
+}

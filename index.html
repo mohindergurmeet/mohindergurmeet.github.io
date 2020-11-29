@@ -7,86 +7,96 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Sansita+Swashed&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
-        <main>
-            <div id="text">
-                <div class="wish">
-                    <h1 class="grad1">Happy Aniversary</h1>
-                    <h1>
-                        <span class="purple">Mumma</span> &
-                        <span class="pink">Papa</span>
-                    </h1>
+        <div id="on-aniv">
+            <main>
+                <div id="text">
+                    <div class="wish">
+                        <h1 class="grad1">Happy Aniversary</h1>
+                        <h1>
+                            <span class="purple">Mumma</span> &
+                            <span class="pink">Papa</span>
+                        </h1>
+                    </div>
+                    <div class="best">
+                        <span id="static-text">You are the World's best</span>
+                        <span id="dynamic-text"></span
+                        ><span class="cursor">&nbsp;</span>
+                    </div>
                 </div>
-                <div class="best">
-                    <span id="static-text">You are the World's best</span>
-                    <span id="dynamic-text"></span
-                    ><span class="cursor">&nbsp;</span>
+                <div id="cover-mobile">
+                    <img src="cover-mobile.jpg" alt="Photo" />
                 </div>
-            </div>
-            <div id="cover-mobile">
-                <img src="cover-mobile.jpg" alt="Photo" />
-            </div>
-        </main>
-        <section class="quote-sec" id="quote-sec-1">
-            <div class="pic">
-                <img src="pic1.jpg" alt="Bueatiful Pic 2" />
-            </div>
-            <div class="quote">
-                You both inspire us every day to be the best version of ourself
-                that we can be and to always treat those we love with respect
-                and kindness. Best wishes for the years ahead.
-            </div>
-        </section>
+            </main>
+            <section class="quote-sec" id="quote-sec-1">
+                <div class="pic">
+                    <img src="pic1.jpg" alt="Bueatiful Pic 2" />
+                </div>
+                <div class="quote">
+                    You both inspire us every day to be the best version of
+                    ourself that we can be and to always treat those we love
+                    with respect and kindness. Best wishes for the years ahead.
+                </div>
+            </section>
 
-        <section id="video-sec">
-            <span>Here's a video for you.</span>
-            <video controls>
-                <source src="video.mp4" type="video/mp4" />
-                Video not available
-            </video>
-        </section>
+            <section id="video-sec">
+                <span>Here's a video for you.</span>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4" />
+                    Video not available
+                </video>
+            </section>
 
-        <section class="quote-sec" id="quote-sec-2">
-            <div class="pic">
-                <img src="pic2.jpg" alt="Bueatiful Pic 2" />
-            </div>
-            <div class="quote">
-                A special wish for a special couple. You deserve a big thank you
-                from us for loving each other in all these years. May you
-                continue to bless us for another thousand years!
-            </div>
-        </section>
+            <section class="quote-sec" id="quote-sec-2">
+                <div class="pic">
+                    <img src="pic2.jpg" alt="Bueatiful Pic 2" />
+                </div>
+                <div class="quote">
+                    A special wish for a special couple. You deserve a big thank
+                    you from us for loving each other in all these years. May
+                    you continue to bless us for another thousand years!
+                </div>
+            </section>
 
-        <section id="poster-sec">
-            <div id="poster-text">
-                <span>And here's a poster made by us.</span>
+            <section id="poster-sec">
+                <div id="poster-text">
+                    <span>And here's a poster made by us.</span>
+                    <a
+                        id="a-desktop"
+                        href="https://github.com/mohindergurmeet/mohindergurmeet.github.io/raw/main/poster.jpg"
+                        >Download</a
+                    >
+                </div>
+                <img src="poster.jpg" alt="Aniversary Poster" />
                 <a
-                    id="a-desktop"
+                    id="a-mobile"
                     href="https://github.com/mohindergurmeet/mohindergurmeet.github.io/raw/main/poster.jpg"
                     >Download</a
                 >
-            </div>
-            <img src="poster.jpg" alt="Aniversary Poster" />
-            <a
-                id="a-mobile"
-                href="https://github.com/mohindergurmeet/mohindergurmeet.github.io/raw/main/poster.jpg"
-                >Download</a
-            >
-        </section>
+            </section>
 
-        <section id="thank-sec">
-            <div class="love-text">Made with <span>love</span></div>
-            <div class="by-text">
-                By <span>Gurjot</span>, <span>Karanjot</span> and
-                <span>Dadi</span>
+            <section id="thank-sec">
+                <div class="love-text">Made with <span>love</span></div>
+                <div class="by-text">
+                    By <span>Gurjot</span>, <span>Karanjot</span> and
+                    <span>Dadi</span>
+                </div>
+            </section>
+        </div>
+
+        <div id="before-aniv">
+            <div id="main-time-text">
+                <div id="time-text">
+                    <div id="time-left"></div>
+                    <div id="to-go">to go</div>
+                </div>
             </div>
-        </section>
+        </div>
 
         <script src="script.js"></script>
     </body>
