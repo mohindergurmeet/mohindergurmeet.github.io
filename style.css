@@ -414,6 +414,6 @@ section#thank-sec {
 }
 
 #on-aniv {
-  display: none;
+  display: unset;
 }
 /*# sourceMappingURL=style.css.map */
