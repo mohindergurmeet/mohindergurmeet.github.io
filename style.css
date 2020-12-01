@@ -187,12 +187,14 @@ main #cover-mobile img {
 .pic img {
   width: 75vw;
   border-radius: 20px;
+  height: 54vw;
 }
 
 @media (min-width: 1024px) {
   .pic img {
     width: 23em;
     margin-right: 3em;
+    height: 16em;
   }
 }
 
@@ -242,6 +244,18 @@ section#quote-sec-1 {
 section#quote-sec-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(#c225c2), to(#161616));
   background: linear-gradient(#161616, #c225c2, #161616);
+}
+
+#quote-sec-2 img {
+  height: 73vw;
+}
+
+@media (min-width: 1024px) {
+  #quote-sec-2 .pic img {
+    width: 23em;
+    margin-right: 3em;
+    height: 22em;
+  }
 }
 
 section#video-sec {
