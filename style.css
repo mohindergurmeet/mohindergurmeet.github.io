@@ -98,6 +98,7 @@ main #cover-mobile {
 main #cover-mobile img {
   width: 75vw;
   border-radius: 20px;
+  height: 71vw;
 }
 
 .best {
